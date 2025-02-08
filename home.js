@@ -1,0 +1,3 @@
+document.querySelector('#box1').addEventListener('click',()=>{window.open('https://leetcode.com/explore/interview/card/system-design-for-interviews-and-beyond/?utm_campaign=HomeBanner&utm_medium=Banner&utm_source=Banner&gio_link_id=GRwNarl9')});
+document.querySelector('#box2').addEventListener('click',()=>{window.open('https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/?vacRef=homebanner')});
+document.querySelector('#contribute').addEventListener('click',()=>{window.open('https://leetcode.com/contribute/')});

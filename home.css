@@ -8,6 +8,7 @@ nav{
     padding-left: 140px;
     border-bottom: 2px solid #d8d8d8;
     align-items: center;
+    justify-items: center;
 }
 #storeTab{
     color:orange;
@@ -16,7 +17,55 @@ nav{
     align-items:center;
     display: flex;
     gap: 27px;
+    width: 79%;
+    padding-left: 0px;
 }
+#mainbody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.content{
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    margin-left: 60px;
+}
+@media only screen and (min-width: 1760px) {
+    .content {
+        margin-left: 20%;      
+    }
+    .left{
+        margin-left: 5%;   
+    }
+}
+@media only screen and (max-width: 550px) {
+    .content {
+        margin-left: 5px;      
+    }
+  }
+@media only screen and (max-width: 992px) {
+      .content {
+          margin-left: 3%;      
+      }
+    .right {
+        display: none;     
+    }
+    .columns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-left: 10px;
+    }
+    #Premiumbtn{
+        display: none;
+    }
+  }
+
 #logo{
     height: 21px;
 }
@@ -33,14 +82,13 @@ a:hover{
     color:black;
 }
 #Premiumbtn{
+
     background-color: rgb(255 236 219);
     color: rgb(234 142 69);
     border-radius: 10px;
     padding: 10px 15px;
     border: none;
     font-size: 14px;
-    position: absolute;
-    right: 200px;
 }
 .item2{
     align-items:center;
@@ -49,12 +97,13 @@ a:hover{
 .columns{
     height: 100%;
     width: 1040px;
-    background-color: aquamarine;
-    padding-left: 200px;
 }
 .left{
     float: left;
+    padding-left: 0%;
+    margin-left: 0%;
 }
+
 .right{
     margin-top: 20px;
     float: right;
@@ -107,6 +156,7 @@ a:hover{
     align-self: flex-end;
     margin-right :15px;
     font-size:10px;
+    cursor:pointer;
 }
 .join{
     width:100px;
@@ -116,6 +166,7 @@ a:hover{
     border-radius:4px;
     margin-left :15px;
     font-size:13px;
+    cursor:pointer;
     background-color:white;
 }
 .join:hover{
@@ -126,4 +177,54 @@ a:hover{
     background-size: 100px 50px;
     margin-left: 20px;
     margin-top: 5px;
+}
+.leftboxes{
+    width: 620px;
+    margin-top: 20px;
+    margin-left: 40px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style-type: none;
+}
+.leftbox{
+    height: 70px;
+    width: 620px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(210, 210, 210, 0.881);
+}
+.imgbox{
+    width:25px;
+    height: 25px;
+    background-image: url('https://assets.leetcode.com/static_assets/public/images/LeetCode_Cup.png');
+    background-size: 25px 25px;
+    margin-top: 8px;
+}
+.text{
+    display: flex;flex-direction:column;
+    margin-left: 17px;
+    margin-top: 5px;
+}
+.time{
+    color: rgba(118, 117, 117, 0.504);
+}
+.specialtext{
+    font-weight:bold;color:rgb(0, 162, 255);
+}
+.style{
+    display:flex;
+}
+.leftbox-3{
+    height: 114px;
+    width: 620px;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba(210, 210, 210, 0.881);
+}
+.imgbox3{
+    width:56px;
+    height: 25px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFo8eNwlUTiv0YbaGIcYufJWXQ42vjFuOCIYKvE3PdAcdC4JnX3p9XQRaNATPJEvbmZkE&usqp=CAU');
+    background-size: 25px 25px;
+    margin-top: 8px;
 }
